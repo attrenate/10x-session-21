@@ -1,3 +1,10 @@
+/* Sir Lucian, a daring magician, is on a mission to recreate the legendary trick “The Transported Man.” He needs Tesla's experimental equipment to pull off the impossible! But there’s a catch — the equipment is locked away, and to get his hands on it, Lucian needs to guess the magic number hidden by Tesla himself. 
+Sir Lucian can’t do it alone. He needs your help to guess the magic number, which is between 1 and 100.
+If Lucian guesses the number correctly, he’ll get the equipment and become the world’s greatest magician! But here’s the twist: Lucian doesn’t know the number. He’ll need to rely on your guesses.
+You should write the code which tells you and Sir Lucian if the number was too high or too low; You should keep guessing until you get the right number, or you give up (use sentinel).
+
+
+ */
 function guessTheMagicNumber() {
     const magicNumber = Math.floor(Math.random() * 100) + 1; 
     let userGuess = 0;
@@ -30,4 +37,4 @@ function guessTheMagicNumber() {
         }
     }
 }
-guessTheMagicNumber();
+//guessTheMagicNumber();
