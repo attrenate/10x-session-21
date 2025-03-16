@@ -202,4 +202,96 @@ if(profit > 0){
 }
 
 // aq damtavrda nukris amocanebi
-//
+
+// Giga ananidze's exercises
+// Swap vars
+let a = 5;
+let b = 10;
+
+console.log(`Before swapping: a = ${a}, b = ${b}`);
+
+
+let temp = a;
+a = b;
+b = temp;
+
+console.log(`After swapping: a = ${a}, b = ${b}`);
+
+// Even or odd
+function numbers(x){
+    let num = x % 2;
+    if(num === 0){
+        console.log('The number is even');
+    } else {
+        console.log('The number is odd');
+    }
+}
+
+numbers(44);
+numbers(45);
+
+// in range
+function range(x, y, num){
+    
+    let success = true;
+    let fail = false;
+    if(num > x && num < y){
+        console.log(success);
+    } else {
+        console.log(fail);
+    }
+}
+range(14, 21, 17);
+range(10, 11, 12);
+
+// Avto Chubinidze's exercises
+// hours
+
+let hour = new Date().getHours(); 
+
+
+let name = "Alex"; 
+
+if (hour >= 6 && hour <= 12) {
+    console.log(`Good morning, ${name}!`);
+} else if (hour >= 13 && hour <= 17) {
+    console.log(`Good afternoon, ${name}!`);
+} else {
+    console.log(`Good night, ${name}!`);
+}
+
+// discount 
+let age = 7; 
+
+
+if (age <= 6 || age >= 65) {
+    console.log("Discount");
+} else {
+    console.log("No discount");
+}
+
+// Teimuraz Kajaevi's exercise
+
+let fuelCostPerHour;
+let earningsPerHour;
+let additionalExpenses;
+
+function dailyEarnings(hoursWorked, extraSpending) {
+    let totalEarning = hoursWorked * earningsPerHour;
+    let totalExpenses = extraSpending + fuelCostPerHour * hoursWorked + additionalExpenses;
+    let result = totalEarning - totalExpenses;
+    return result;
+}
+
+
+let hoursWorked = parseFloat(prompt("Enter the number of hours you will work:"));
+let extraSpending = parseFloat(prompt("Enter any additional expenses for the day:"));
+
+
+if (isNaN(hoursWorked) || isNaN(extraSpending) || hoursWorked < 0 || extraSpending < 0) {
+    alert("Please enter valid numbers for hours worked and extra spending.");
+} else {
+    
+    let earnings = dailyEarnings(hoursWorked, extraSpending);
+    alert(`Your final daily earnings after expenses: $${earnings.toFixed(2)}`);
+}
