@@ -77,4 +77,129 @@ if(currentFuel < canLaunch){
 }
 
 // Exercise 7: The Time Traveler’s Stopwatch (Updated)
-// shemezara danarchens mere vizam mament
+const date = new Date().getFullYear();
+const yearsJumped = 44;
+const dateAfterJump = date + yearsJumped;
+
+console.log(`After a time jump of ${yearsJumped} years, the year will be ${dateAfterJump}.`);
+
+
+// Exercise 8: The Wizard’s Spell Strength Test
+let abracadabra = 11;
+let vingardiumLeviosa = 22;
+let blahBlah = 12;
+
+let strongestSpell;
+if(abracadabra > vingardiumLeviosa && abracadabra > blahBlah){
+    strongestSpell = 'abracadabra';
+} else if(abracadabra < vingardiumLeviosa && abracadabra > blahBlah){
+    strongestSpell = 'vingardiumLeviosa'
+} else if(abracadabra === vingardiumLeviosa && abracadabra === blahBlah){
+    strongestSpell = 'all three of the spells are equal';
+} else if(abracadabra > vingardiumLeviosa && abracadabra < blahBlah){
+    strongestSpell = 'blahBlah';
+}
+console.log(`The strongest spell is: ${strongestSpell}`);
+
+// Exercise 9: The Haunted House Mystery
+let kitchenHasGhost = true;
+let livingRoomHasGhost = false;
+let houseIsSafe = livingRoomHasGhost === !true && kitchenHasGhost === !true;
+
+if(houseIsSafe === true){
+    console.log('The house is safe! No ghosts in the Kitchen or Living Room.');
+} else {
+    console.log('Danger! The house is NOT safe. Ghosts detected!');
+}
+
+// Exercise 10: The Robot’s Battery Check
+let batteryPower = 81;
+let batterySufficient = 30;
+
+if(batteryPower > batterySufficient){
+    console.log('Battery sufficient');
+} else if(batteryPower > batterySufficient){
+    console.log(' Low Battery');
+}
+
+// Exercise 11: The Dragon’s Health Meter
+let dragonHealth = 100;
+let knightsAttack = 25;
+dragonHealth -= knightsAttack;
+
+console.log(dragonHealth);
+
+// Exercise 12: The Speeding Race Car
+const speedLimit = 50;
+let carSpeed = 30;
+
+carSpeed += 25;
+
+if(carSpeed > speedLimit){
+    console.log('Speed Warning: You are going too fast!');
+    console.log(`Current speed is: ${carSpeed} mph`);
+} else if(carSpeed < speedLimit){
+    console.log('okay');
+    console.log(`Current speed is: ${carSpeed} mph`);
+}
+
+// Exercise 13: The Superhero Strength Test
+let valiantPower = 90;
+let heroStrenght = 95;
+
+let result = heroStrenght - valiantPower;
+if(result > 10){
+    console.log('Valiant triumphs decisively! Malakor is utterly outmatched!');
+} else if(result <= 10){
+    console.log("Valiant barely edges out! A close call victory against Malakor!")
+} else if(valiantPower === heroStrenght){
+    console.log("It's a strength stalemate! Neither Valiant nor Malakor can overpower the other.");
+}
+
+// Exercise 14: The Tricky Treasure Hunt
+let hasTreasureMap = true;
+let isFullMoon = false;
+let foundAncientKey = true;
+let solvedRiddleScroll = false;
+let hasCompass = false;
+
+const mapFound = hasTreasureMap === true  || foundAncientKey === true || solvedRiddleScroll === true && hasCompass === true;
+
+if(mapFound === !false){
+    console.log('Success! Alex can find the legendary treasure!');
+} else {
+    console.log('Alas, Alex is missing crucial clues and cannot find the treasure yet.');
+}
+
+// Exercise 15: The Ice Cream Shop’s Daily Sales with Volume Discount
+let conesSoldToday = 250;
+let sundaesSoldToday = 120;
+let conePrice = 4;
+let sundaePrice = 8;
+
+let earningFromCones = conePrice * conesSoldToday;
+let earningsFromSundae = sundaesSoldToday * sundaePrice;
+let totalEarnings = earningFromCones + earningsFromSundae;
+let afterDiscount = totalEarnings - totalEarnings * 5 / 100;
+let discount = totalEarnings * 5 / 100;
+if(totalEarnings > 1000){
+    console.log(totalEarnings);
+    console.log(`Volume Discount Applied, the amount of disount applied is: ${discount}
+        daily earning after discount is: ${afterDiscount}`);
+}
+
+// Exercise 16: Music Band Concert Profit Check 
+let ticketPrice = 20;
+let ticketSold = 500;
+let concertCost = 8000;
+let earningsFromTicket = ticketPrice * ticketSold;
+let profit = earningsFromTicket - concertCost;
+
+if(profit > 0){
+    console.log(`Concert profit is ${profit}$ . Great success!`);
+} else if(profit <= 0){
+    console.log(`Concert did not cover costs. Earnings: $${earningsFromTicket}, costs: $${concertCost}.`);
+}
+
+// aq damtavrda nukris amocanebi
+//
